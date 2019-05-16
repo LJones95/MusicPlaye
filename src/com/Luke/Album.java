@@ -29,10 +29,10 @@ public class Album {
         return false;
     }
 
-    public Song findSong(String songName) {
-        for (int i = 0; i < albumSongs.size(); i++) {
-            if ((albumSongs.get(i).getName().equals(songName))) {
-                return albumSongs.get(i);
+    public Song findSong(String name) {
+        for (Song songName : albumSongs) {
+            if ((songName.getName().equals(name))) {
+                return songName;
             }
         }
 

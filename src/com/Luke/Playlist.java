@@ -2,7 +2,6 @@ package com.Luke;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.ListIterator;
 
 public class Playlist {
     private String name;
@@ -51,9 +50,8 @@ public class Playlist {
     }
 
     private boolean findSongInPlaylist(String name) {
-        ListIterator<Song> i = playlist.listIterator();
-        while (i.hasNext()) {
-            if (i.next().getName().equals(name)) {
+        for (Song songName : playlist) {
+            if (songName.getName().equals(name)) {
                 return true;
             }
         }
