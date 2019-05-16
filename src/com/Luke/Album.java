@@ -1,10 +1,11 @@
 package com.Luke;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Album {
     private String name;
-    private ArrayList<Song> albumSongs;
+    private List<Song> albumSongs;
 
     public Album(String name) {
         this.name = name;
@@ -15,7 +16,7 @@ public class Album {
         return name;
     }
 
-    public ArrayList<Song> getAlbumSongs() {
+    public List<Song> getAlbumSongs() {
         return albumSongs;
     }
 
