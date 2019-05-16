@@ -1,11 +1,12 @@
 package com.Luke;
 
 import java.util.LinkedList;
+import java.util.List;
 import java.util.ListIterator;
 
 public class Playlist {
     private String name;
-    private LinkedList<Song> playlist;
+    private List<Song> playlist;
 
     public Playlist(String name) {
         this.name = name;
@@ -16,7 +17,7 @@ public class Playlist {
         return name;
     }
 
-    public LinkedList<Song> getPlaylist() {
+    public List<Song> getPlaylist() {
         return playlist;
     }
 
